@@ -92,7 +92,9 @@ a {
   display: flex;
   justify-content: space-between;
   width: 85%;
+  align-items: center;
 }
+
 .contain-item p {
   margin-left: 14rem;
 }
@@ -109,12 +111,15 @@ a {
 .clear-btn {
   color: red;
   font-size: 18px;
-  margin-left: 30rem;
+  /* margin-left: 30rem; */
   margin-bottom: 2rem;
   padding: 1px 1px;
   border: none;
   background: aliceblue;
   cursor: pointer;
+}
+.contain {
+  text-align: center;
 }
 .grocery-container {
   margin-top: 2rem;
