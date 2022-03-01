@@ -11,9 +11,10 @@ html {
 }
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.9;
   display: flex;
+  color: rgb(51 65 85);
   justify-content: center;
 }
 h1,
@@ -56,7 +57,8 @@ a {
   margin-top: 3rem;
   background: aliceblue;
   width: 50%;
-  box-shadow: 2px 2px black;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 .section-center h3 {
   text-transform: capitalize;
@@ -64,9 +66,10 @@ a {
   margin-top: 2rem;
 }
 .form-control input {
-  border: none;
+  border: 1px solid rgb(156 163 175);
   width: 50%;
   font-size: 20px;
+  padding: 10px;
 }
 .submit-btn {
   border: none;
@@ -91,25 +94,22 @@ a {
 .contain-item {
   display: flex;
   justify-content: space-between;
-  width: 85%;
   align-items: center;
+  padding: 0 20px;
 }
 
-.contain-item p {
-  margin-left: 14rem;
-}
 .edit-btn {
-  color: lawngreen;
+  color: rgb(54 83 20);
   border: none;
   cursor: pointer;
 }
 .delete-btn {
-  color: red;
+  color: rgb(136 19 55);
   border: none;
   cursor: pointer;
 }
 .clear-btn {
-  color: red;
+  color: rgb(136 19 55);
   font-size: 18px;
   /* margin-left: 30rem; */
   margin-bottom: 2rem;
@@ -118,6 +118,20 @@ a {
   background: aliceblue;
   cursor: pointer;
 }
+
+.icon {
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid rgb(248 250 252);
+  border-radius: 5px;
+  background-color: rgb(248 250 252);
+}
+
+.icon:hover {
+  background: rgb(226 232 240);
+}
+
 .contain {
   text-align: center;
 }
@@ -151,4 +165,17 @@ a {
   color: #155724;
   background: #00e035;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .contain-item p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .icon {
+    font-size: 15px;
+    padding: 2px;
+    margin: 1px;
+  }
 }

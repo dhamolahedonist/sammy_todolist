@@ -159,10 +159,10 @@ function createListItem(id,value){
               <p class="title">${value}</p>
               <div class="btn-container">
                 <button type="button" class="edit-btn">
-                  <i class="fas fa-edit"></i>
+                  <i class="fas fa-edit icon"></i>
                 </button>
                 <button type="button" class="delete-btn">
-                  <i class="fas fa-trash"></i>
+                  <i class="fas fa-trash icon"></i>
                 </button>
               </div>
             </div>`;
